@@ -1,0 +1,165 @@
+:root {
+    --purple_light: #8D79A7;
+    --purple_dark: #7A5AA2;
+    --grey_dark: #2A2A2B;
+    --background_header: #21252b;
+    --background_login: #aa996d;
+    --backgroud_body: #282c34;
+    --color_string: white;
+    --color_button_hover: #343541;
+    --color_button_submit: #d9d9d9;
+    --color_element_select: #8d8d8d;
+};
+html {
+    margin: 0px;
+}
+body {
+    
+    background-color: var(--backgroud_body); 
+  }
+
+.inactive {
+    display: none;
+}
+  
+
+header {
+    height: auto;
+    width: 100%;
+}
+
+.container_headerMain {
+    height: 104px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background_header);
+    color: var(--color_string);
+}
+
+.container_logo {
+    height: 100%;
+    width: auto;
+}
+
+.logo_main {
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+}
+.container_login_createAccount {
+    height: 100%;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.container_login_createAccount button {
+    margin: 0px 10px 5px 0px;
+}
+
+.menu_login{
+    height: auto;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 112px;
+    right: 130px;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.login > * {
+    margin: 5px;
+}
+.button_login:hover, .button_signIn:hover {
+    cursor: pointer;
+    background-color: var(--color_button_hover);
+    color: white;
+}
+.buttonSubmitLogin:hover, .buttonSubmitSignIn:hover {
+    cursor: pointer;
+    background-color: var(--color_button_submit);
+    
+    
+}
+.menu_signIn {
+    height: auto;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 112px;
+    right: 130px;
+}
+.createAccount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.createAccount > * {
+    margin: 5px;
+}
+
+nav {
+    height: auto;
+    width: 100%;
+    color: var(--color_string)
+}
+
+.list_main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list_main li button{
+    border: none;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    background-color: transparent;
+    color: var(--color_string);
+}
+
+.list_main li button:hover {
+    cursor: pointer;
+    color: var(--color_element_select);
+}
+
+article {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    color: var(--color_string);
+}
+
+.buttonSave{
+margin: 0px 0px 0px 10px;
+}
+
+.buttonSave:hover, .buttonPublish:hover {
+    background-color: var(--color_button_submit);
+    cursor: pointer;
+}
