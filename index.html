@@ -21,13 +21,13 @@
             <h1> Welcome to World of Literature</h1>
         </div>
 
-        <div class="container_login_createAccount">
+        <div class="container_button_login_createAccount">
             <button type="button" class="button_login">Login</button>
 
             <button type="button" class="button_signIn">Sign in</button>
         </div>
 
-        <div class="menu_login">
+        <div class="inactive_menuLogin">
             <div class="login">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="example@gmail.com"/> 
@@ -35,10 +35,10 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="************"/> 
 
-            <button class="buttonSubmitLogin">Login</button>
+                <button class="buttonSubmitLogin">Login</button>
             </div>
         </div>
-        <div class="menu_signIn">
+        <div class="inactive_menuSignIn">
             <div class="createAccount">
                 <label for="userName">Username</label>
                 <input type="text" id="userName" name="userName" placeholder="For example: Albert Romero"/>
@@ -52,20 +52,20 @@
                 <label for="repeatPassword">Repeat password</label>
                 <input type="password" id="repeatPassword" name="password" placeholder="************"/> 
 
-            <button class="buttonSubmitSignIn">Create</button>
+                <button class="buttonSubmitSignIn">Create</button>
             </div>
         </div>
 
-</div>
+    </div>
 </header>
 <nav>
     <div class="container_list_nav">
     <ul class="list_main">             
-        <li><button> Element 1 </button></li>
-        <li><button> Element 2 </button></li>
-        <li><button> Element 3 </button></li>
-        <li><button> Element 4 </button></li>
-        <li><button> Element 5 </button></li>
+        <li><button> Comunidad </button></li>
+        <li><button> Reseñas </button></li>
+        <li><button> Noticias </button></li>
+        <li><button> Blogs </button></li>
+        <li><button> Soporte </button></li>
     </ul>
     </div>
 </nav>
@@ -73,7 +73,7 @@
 <section>
     <article>
         <div class="container_title_article">
-            <h2>Lorem ipsum dolor</h2>
+            <h2 class="title_article">Lorem ipsum dolor</h2>
         </div>
         <div class="container_content_article">
             <form action="almacenar.txt" method="post">
@@ -82,7 +82,7 @@
                     <input type="text" id="title" name="title" placeholder="write some title">
                 </div>
 
-                <textarea rows="20" cols="60" name="post" placeholder="Escribe tu post aquí" maxlength="500"></textarea>
+                <textarea class="textarea_post" rows="20" cols="60" name="post" placeholder="Escribe tu post aquí" maxlength="50000"></textarea>
                 <br>
                 <input type="submit" value="Publish" class="buttonPublish">
                 <button type="button" class="buttonSave">Save</button>

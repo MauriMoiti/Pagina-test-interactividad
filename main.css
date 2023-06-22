@@ -1,3 +1,4 @@
+/* estilo general */
 :root {
     --purple_light: #8D79A7;
     --purple_dark: #7A5AA2;
@@ -17,12 +18,16 @@ body {
     
     background-color: var(--backgroud_body); 
   }
-
-.inactive {
+/*  etiquetas inactive, al ejecutar el evento de click en sus 
+ respectivos button, mutan a menu_signIn menu_login */
+.inactive_menuSignIn {
+    display: none;
+}
+.inactive_menuLogin {
     display: none;
 }
   
-
+/* header */
 header {
     height: auto;
     width: 100%;
@@ -48,7 +53,7 @@ header {
     width: 200px;
     border-radius: 50%;
 }
-.container_login_createAccount {
+.container_button_login_createAccount {
     height: 100%;
     width: 230px;
     display: flex;
@@ -56,10 +61,11 @@ header {
     align-items: end;
 
 }
-.container_login_createAccount button {
+.container_button_login_createAccount button {
     margin: 0px 10px 5px 0px;
 }
 
+/* inactive_menuLogin muta a menu_login */
 .menu_login{
     height: auto;
     width: 230px;
@@ -93,6 +99,7 @@ header {
     
     
 }
+/* inactive_menuSignIn muta a menu_signIn */
 .menu_signIn {
     height: auto;
     width: 230px;
@@ -116,6 +123,7 @@ header {
     margin: 5px;
 }
 
+/* nav */
 nav {
     height: auto;
     width: 100%;
@@ -146,6 +154,7 @@ nav {
     color: var(--color_element_select);
 }
 
+/* section - article */
 article {
     height: auto;
     width: 100%;
@@ -155,6 +164,11 @@ article {
     color: var(--color_string);
 }
 
+.textarea_post {
+    height: 400px;
+    width: 470px;
+}
+
 .buttonSave{
 margin: 0px 0px 0px 10px;
 }
@@ -162,4 +176,80 @@ margin: 0px 0px 0px 10px;
 .buttonSave:hover, .buttonPublish:hover {
     background-color: var(--color_button_submit);
     cursor: pointer;
+}
+
+@media(max-width: 640px) {
+
+    /* header */
+    .container_headerMain div h1 {
+        font-size: medium;
+    }
+    .logo_main {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .menu_signIn {
+        height: auto;
+        width: 180px;
+        top: 112px;
+        right: 0px;
+    }
+
+    .createAccount {
+        font-size: small;
+    }
+    .createAccount > * {
+        margin: 2px;
+    }
+
+    .menu_login{
+        height: auto;
+        width: 180px;
+        top: 112px;
+        right: 0px;
+    }
+
+    .login {
+        font-size: small;
+    }
+    .login > * {
+        margin: 2px;
+    }
+
+    .container_button_login_createAccount {
+        height: 100%;
+        width: 130px;
+    }
+    .container_button_login_createAccount button {
+        margin: 0px 5px 3px 0px;
+    }
+
+   .button_login {
+        height: 20px;
+        width: auto;
+        padding: 2px;
+        font-size: small;
+    
+    }
+    .button_signIn {
+        height: 20px;
+        width: 59px;
+        padding: 1px;
+        font-size: small;
+    }
+
+    /* nav */  
+    .list_main li button{
+        font-size: 14px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    /* Article */
+    .textarea_post {
+        height: 300px;
+        width: 250px;
+    }
 }
