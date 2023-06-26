@@ -15,17 +15,19 @@ html {
     margin: 0px;
 }
 body {
-    
     background-color: var(--backgroud_body); 
   }
 /*  etiquetas inactive, al ejecutar el evento de click en sus 
  respectivos button, mutan a menu_signIn menu_login */
+
+ 
 .inactive_menuSignIn {
     display: none;
 }
 .inactive_menuLogin {
     display: none;
 }
+
   
 /* header */
 header {
@@ -46,12 +48,18 @@ header {
 .container_logo {
     height: 100%;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 }
 
 .logo_main {
-    height: 100px;
-    width: 200px;
-    border-radius: 50%;
+    height: 60px;
+    width: 100px;
+}
+
+.container_title_header {
+    margin-left: 120px
 }
 .container_button_login_createAccount {
     height: 100%;
@@ -123,6 +131,10 @@ header {
     margin: 5px;
 }
 
+.inactive {
+    display: none;
+}
+
 /* nav */
 nav {
     height: auto;
@@ -163,7 +175,11 @@ article {
     place-items: center;
     color: var(--color_string);
 }
-
+.article_phrase {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    margin: 30px;
+}
 .textarea_post {
     height: 400px;
     width: 470px;
@@ -178,6 +194,81 @@ margin: 0px 0px 0px 10px;
     cursor: pointer;
 }
 
+/* left aside */
+.book_catalog {
+    height: 445px;
+    width: 448px;
+    display: grid;
+    grid-template: repeat(auto, 200px)/repeat(2,auto);
+    position: absolute;
+    top: 256px;
+    left: 2px;
+    border: 1px solid white;
+    background-color: var(--background_header);
+    overflow-y: scroll;
+}
+
+.container_titleCatalog {
+    display: flex;
+    place-content: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 8px;
+}
+.title_bookCatalog {
+    margin: 0px;
+    color: var(--color_string);
+}
+
+.book_card {
+    height: 100%;
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    
+}
+.book_img {
+    height: 130px;
+    width: 130px;
+    place-self: center;
+    margin-top: 15px;
+    
+}
+.book_info {
+    display: flex;
+    flex-direction: column;
+}
+.book_title {
+    color: var(--color_string);
+    margin: 12px 0px 6px 0px;
+    place-self: center;
+}
+ .book_figure {
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+} 
+.figure_button {
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    background: none;
+    color: var(--color_string);
+    border: none;
+    cursor: pointer;
+}
+.figure_button:hover {
+    color: var(--color_element_select);
+}
+.book_icon {
+    height: 35px;
+    width: 35px;
+}
+
+
 @media(max-width: 640px) {
 
     /* header */
@@ -187,7 +278,6 @@ margin: 0px 0px 0px 10px;
     .logo_main {
         height: 100px;
         width: 100px;
-        border-radius: 50%;
     }
 
     .menu_signIn {
@@ -248,8 +338,85 @@ margin: 0px 0px 0px 10px;
     }
     
     /* Article */
+    .article_phrase {
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+        margin: 30px;
+    }
     .textarea_post {
         height: 300px;
         width: 250px;
     }
+
+    /* left aside */
+    .book_catalog {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .container_titleCatalog {
+        display: flex;
+        place-content: center;
+        margin: 8px;
+    }
+    .title_bookCatalog {
+        margin: 0px;
+        color: var(--color_string);
+    }
+    
+    .book_card {
+        height: 100%;
+        width: 640px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        
+    }
+    .book_img {
+        height: 90px;
+        width: 90px;
+        place-self: center;
+        margin-top: 15px;
+        
+    }
+    .book_info {
+        height: 100%;
+        width: 150px;
+    }
+    .book_title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: var(--color_string);
+        margin: 12px 12px 2px 12px;
+    }
+     .book_figure {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    } 
+    .figure_button {
+        height: 35px;
+        width: 35px;
+        padding: 0px;
+        margin-bottom: 20px;
+        background: none;
+        color: var(--color_string);
+        border: none;
+        cursor: pointer;
+    }
+    .book_icon {
+        height: 35px;
+        width: 35px;
+    }
+
 }

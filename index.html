@@ -14,7 +14,7 @@
     <div class="container_headerMain">
 
         <div class="container_logo">
-            <img src="./images/book.png" alt="logo" class="logo_main">    
+            <img src="./icons/bookBlack.png" alt="logo" class="logo_main">    
         </div>
     
         <div class="container_title_header">
@@ -30,10 +30,10 @@
         <div class="inactive_menuLogin">
             <div class="login">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="example@gmail.com"/> 
+                <input type="text" id="emailLogin" name="email" placeholder="example@gmail.com"/> 
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="************"/> 
+                <label for="passwordLogin">Password</label>
+                <input type="password" id="passwordLogin" name="password" placeholder="************"/> 
 
                 <button class="buttonSubmitLogin">Login</button>
             </div>
@@ -43,14 +43,14 @@
                 <label for="userName">Username</label>
                 <input type="text" id="userName" name="userName" placeholder="For example: Albert Romero"/>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="example@gmail.com"/> 
+                <label for="emailSignIn">Email</label>
+                <input type="text" id="emailSignIn" name="email" placeholder="example@gmail.com"/> 
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="************"/> 
+                <label for="passwordSignIn">Password</label>
+                <input type="password" id="passwordSignIn" name="password" placeholder="************"/> 
 
-                <label for="repeatPassword">Repeat password</label>
-                <input type="password" id="repeatPassword" name="password" placeholder="************"/> 
+                <label for="repeatPasswordSignIn">Repeat password</label>
+                <input type="password" id="repeatPasswordSignIn" name="password" placeholder="************"/> 
 
                 <button class="buttonSubmitSignIn">Create</button>
             </div>
@@ -61,11 +61,11 @@
 <nav>
     <div class="container_list_nav">
     <ul class="list_main">             
-        <li><button> Comunidad </button></li>
-        <li><button> Reseñas </button></li>
-        <li><button> Noticias </button></li>
+        <li><button> Community </button></li>
+        <li><button> Reviews </button></li>
+        <li><button> News </button></li>
         <li><button> Blogs </button></li>
-        <li><button> Soporte </button></li>
+        <li><button> Support </button></li>
     </ul>
     </div>
 </nav>
@@ -73,16 +73,16 @@
 <section>
     <article>
         <div class="container_title_article">
-            <h2 class="title_article">Lorem ipsum dolor</h2>
+            <p class="article_phrase">"Books are a uniquely portable magic." - Stephen King</p>
         </div>
         <div class="container_content_article">
-            <form action="almacenar.txt" method="post">
+            <form action="storage.txt" method="post">
                 <div>
                     <label for="title">Post title:</label>
-                    <input type="text" id="title" name="title" placeholder="write some title">
+                    <input type="text" id="title" name="title" placeholder="Write some title">
                 </div>
 
-                <textarea class="textarea_post" rows="20" cols="60" name="post" placeholder="Escribe tu post aquí" maxlength="50000"></textarea>
+                <textarea class="textarea_post" rows="20" cols="60" name="post" placeholder="Write your post here" maxlength="50000"></textarea>
                 <br>
                 <input type="submit" value="Publish" class="buttonPublish">
                 <button type="button" class="buttonSave">Save</button>
@@ -90,6 +90,34 @@
         </div>
     </article>
 </section>
+
+
+<aside class="book_catalog">
+
+    <div class="container_titleCatalog"> 
+        <h2 class="title_bookCatalog">Featured books</h2>
+    </div>
+    
+    <div class="book_card">
+
+        <img class="book_img" src="./images/bookCatalog/elEscarabajoDeOro.jpeg" alt="book photo">
+        
+        <div class="book_info">
+            <p class="book_title">El Escarabajo De Oro - <br> Edgar Allan Poe</p>
+            <figure class="book_figure">
+               <button class="figure_button" type="button"> 
+                <img class="book_icon" src="./icons/icon-read.png" alt="icon person reading">
+                Details
+               </button> 
+            </figure>
+        </div>
+       
+    </div>
+
+</aside>
+
+
+
 <script src="./main.js"></script>
 </body>
 
